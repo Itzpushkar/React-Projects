@@ -13,7 +13,7 @@ const Numbers = ({ buttons, ClickFunction }) => {
         >
           {chunk.map((CalBtn) => (
             <button
-              className="bg-[#ffffff] text-[#8e9a91] px-4 py-2 rounded shadow hover:bg-[#f2b70d] hover:text-white transition flex-row justify-center items-center text-[24px] h-[65px] w-[65px] rounded-[50%] px-2 py-1"
+              className="bg-[#ffffff] text-[#8e9a91] px-4 py-2 rounded-full shadow hover:bg-[#f2b70d] hover:text-white transition flex-row justify-center items-center text-[24px] h-[65px] w-[65px] "
               key={CalBtn}
               onClick={() => ClickFunction(CalBtn)}
             >
