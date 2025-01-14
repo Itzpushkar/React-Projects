@@ -1,0 +1,31 @@
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* Swinging animation for the main kite */
+@keyframes swing {
+  0% {
+    transform: translate(-50%, -50%) rotate(-5deg); /* Slightly tilted to the left */
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(5deg); /* Slightly tilted to the right */
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-5deg); /* Return back to left tilt */
+  }
+}
+
+.message {
+  animation: fadeInScale 3s ease-in-out forwards;
+}
